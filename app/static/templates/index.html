@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Culture</title>
+    <base href="/dev/">
+    <meta name="title" content="Global Culture Demo.">
+    <meta name="description" content="Global Culture Web Design by https://dribbble.com/marko-cvijetic">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='fonts/stylesheet.css') }}">
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://offbrand.co/">
+    <meta property="og:title" content="Global Culture Demo.">
+    <meta property="og:description" content="Global Culture Web Design by https://dribbble.com/marko-cvijetic">
+    <meta property="og:image" content="{{ url_for('static', filename='images/Image.jpg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://offbrand.co/">
+    <meta property="twitter:title" content="Global Culture Demo.">
+    <meta property="twitter:description" content="Global Culture Web Design by https://dribbble.com/marko-cvijetic">
+    <meta property="twitter:image" content="{{ url_for('static', filename='images/Image.jpg') }}">
+</head>
+<body>
+    <div id="root" />
+    <script src="{{ url_for('static', filename="bundle.js") }}" type="text/javascript"></script>
+</body>
+</html>
